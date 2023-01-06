@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="380.0" prefWidth="110.0" style="-fx-background-color: #FFFFFF;" />
+      <AnchorPane layoutX="134.0" layoutY="14.0" prefHeight="380.0" prefWidth="531.0">
+         <children>
+            <AreaChart fx:id="memUsage" prefHeight="380.0" prefWidth="560.0" title="Uso de RAM">
+              <xAxis>
+                <CategoryAxis prefHeight="20.0" prefWidth="432.0" side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis label="Memória" prefHeight="306.0" prefWidth="45.0" side="LEFT" tickLength="10.0" upperBound="90.0" />
+              </yAxis>
+            </AreaChart>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
